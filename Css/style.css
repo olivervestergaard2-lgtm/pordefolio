@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        #F3F7F8 0%,
+        #E8F0F3 25%,
+        #D8E6EB 50%,
+        #C6DAE2 75%,
+        #B4CED8 100%
+    );
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1e1e1e;
+}
+
+/* TOPPEN */
+
+header {
+    padding: 40px 60px 0;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+/* DE TO BILLEDER */
+
+.forside {
+    min-height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 170px;
+
+    padding: 50px;
+}
+
+
+/* HVERT BILLEDE */
+
+.forside-kort {
+    display: block;
+
+    width: 400px;
+    height: 400px;
+
+    overflow: hidden;
+
+    text-decoration: none;
+
+    border: 2px solid #2B2B2B;
+    border-radius: 18px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* SELVE BILLEDERNE */
+
+.forside-kort img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 16px;
+}
+
+
+/* OM MIG - VIS MERE AF VENSTRE SIDE */
+
+.forside-kort:hover {
+    transform: translateY(-6px) scale(1.02);
+
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* NÅR MUSEN ER OVER */
+
+.forside-kort:hover {
+    transform: scale(1.04);
+}
+
+
+/* MOBIL */
+
+@media (max-width: 900px) {
+
+    .forside {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .forside-kort {
+        width: 90vw;
+        max-width: 400px;
+        height: 400px;
+    }
+}
+/* Gør kortet til udgangspunkt for teksten */
+.forside-kort {
+    position: relative;
+}
+
+/* Teksten oven på OM MIG-billedet */
+.kort-tekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    text-align: center;
+
+    color: white;
+    z-index: 2;
+}
+
+/* OM MIG */
+.kort-tekst h2 {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 800;
+
+    color: white;
+}
+
+/* Teksten nedenunder */
+.kort-tekst p {
+    margin-top: 8px;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    color: white;
+}
+
+/* Den lille hvide streg */
+.kort-tekst .linje {
+    width: 50px;
+    height: 2px;
+
+    background-color: white;
+
+    margin: 18px auto 0;
+}
+
+header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+/* =========================
+   OM MIG SIDE
+========================= */
+
+
+/* NAVIGATION */
+
+.navigation {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 35px 60px;
+}
+
+.navigation a {
+    color: #1e1e1e;
+    text-decoration: none;
+}
+
+.tilbage {
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+/* INDHOLD */
+
+.om-mig-side {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 20px 60px 0;
+}
+
+
+/* HERO */
+.om-mig-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 90px;
+
+    min-height: auto;
+    margin-bottom: 20px;
+}
+/* VENSTRE SIDE */
+
+.om-mig-tekst {
+    flex: 1;
+}
+
+.lille-overskrift {
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+.om-mig-tekst h1 {
+    font-size: 65px;
+
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 500px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    color: #444;
+}
+
+
+/* HØJRE SIDE */
+
+.om-mig-billede {
+    width: 430px;
+    height: 500px;
+
+    border: 2px solid #2b2b2b;
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.om-mig-billede img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 900px) {
+
+    .navigation {
+        padding: 25px;
+    }
+
+    .om-mig-side {
+        padding: 30px 25px;
+    }
+
+    .om-mig-hero {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 40px;
+    }
+
+    .om-mig-tekst h1 {
+        font-size: 48px;
+    }
+
+    .om-mig-billede {
+        width: 100%;
+        height: 450px;
+    }
+}
+
+/* =========================
+   MIN VEJ
+========================= */
+
+.min-vej,
+.lidt-om-mig,
+.kompetencer,
+.kontakt {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 70px 0;
+}
+
+/* Min vej skal starte tidligere */
+.min-vej {
+    padding-top: 20px;
+}
+.min-vej h2,
+.lidt-om-mig h2,
+.kompetencer h2,
+.kontakt h2 {
+    font-size: 42px;
+    margin-bottom: 45px;
+}
+
+
+/* TIDSLINJE */
+
+.tidslinje {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.tidslinje-punkt {
+    border-top: 2px solid #2b2b2b;
+    padding-top: 20px;
+}
+
+.tidslinje-punkt span {
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+.tidslinje-punkt h3 {
+    margin: 12px 0;
+    font-size: 22px;
+}
+
+.tidslinje-punkt p {
+    line-height: 1.6;
+    color: #444;
+}
+
+
+/* LIDT OM MIG */
+
+.om-mig-kort-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-kort {
+    background-color: #f4f5f5;
+
+    border: 1px solid #c4c9cc;
+    border-radius: 18px;
+
+    padding: 35px;
+    min-height: 220px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.info-kort:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.info-kort h3 {
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.info-kort p {
+    line-height: 1.7;
+    color: #444;
+}
+
+
+/* KOMPETENCER */
+
+.kompetence-liste {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.kompetence-liste span {
+    padding: 14px 22px;
+
+    border: 1px solid #2b2b2b;
+    border-radius: 100px;
+
+    font-size: 16px;
+}
+
+
+/* KONTAKT */
+
+.kontakt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 60px;
+
+    border-top: 2px solid #2b2b2b;
+}
+
+.kontakt p {
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+.kontakt-links {
+    display: flex;
+    gap: 20px;
+}
+
+.kontakt-links a {
+    color: #1e1e1e;
+
+    text-decoration: none;
+
+    border: 1px solid #2b2b2b;
+    border-radius: 100px;
+
+    padding: 13px 22px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.kontakt-links a:hover {
+    background-color: #1e1e1e;
+    color: #ede6da;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 900px) {
+
+    .tidslinje {
+        grid-template-columns: 1fr;
+    }
+
+    .om-mig-kort-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kontakt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .kontakt-links {
+        flex-wrap: wrap;
+    }
+}
