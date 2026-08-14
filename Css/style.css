@@ -506,3 +506,722 @@ header p {
         flex-wrap: wrap;
     }
 }
+/* =========================
+   SKOLE SIDE
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.skole-body {
+    background: linear-gradient(
+        to bottom,
+        #f3f7f8 0%,
+        #e5f0f4 45%,
+        #d1e3e9 100%
+    );
+
+    color: #1e1e1e;
+}
+
+
+/* =========================
+   SIDE
+========================= */
+
+.skole-side {
+    width: 90%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.skole-intro {
+    padding: 80px 0 60px;
+}
+
+.skole-intro h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.skole-intro > p:last-child {
+    max-width: 600px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================
+   SEMESTER MENU
+========================= */
+
+.semester-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 120px;
+}
+
+.semester-menu a {
+    background: #f4f5f5;
+
+    border: 1px solid #b9c5c9;
+    border-radius: 18px;
+
+    padding: 30px;
+
+    color: #1e1e1e;
+    text-decoration: none;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.semester-menu a:hover {
+    transform: translateY(-5px);
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   SEMESTER
+========================= */
+
+.semester {
+    padding: 80px 0;
+}
+
+.semester-heading {
+    margin-bottom: 50px;
+}
+
+.semester-heading h2 {
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.semester-heading > p:last-child {
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* =========================
+   PROJEKT
+========================= */
+
+.projekt {
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 1px solid #bcc8cc;
+    border-radius: 25px;
+
+    padding: 50px;
+
+    margin-bottom: 50px;
+
+    backdrop-filter: blur(4px);
+}
+
+
+/* =========================
+   PROJEKT TOP
+========================= */
+
+.projekt-top {
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+    margin-bottom: 70px;
+}
+
+.projekt-beskrivelse {
+    max-width: 750px;
+}
+
+.projekt-type {
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+.projekt h3 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.projekt-intro {
+    max-width: 700px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #444;
+
+    margin-bottom: 18px;
+}
+
+.projekt-rolle {
+    margin-top: 25px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #333;
+}
+
+
+/* =========================
+   HØJRE SIDE
+   TOOLS + PREVIEW
+========================= */
+
+.projekt-side {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+/* TOOLS */
+
+.projekt-tools {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.projekt-tools span {
+    background: #f4f5f5;
+
+    border: 1px solid #9eafb5;
+    border-radius: 100px;
+
+    padding: 10px 17px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* PREVIEW */
+
+.projekt-preview {
+    background: #f4f5f5;
+
+    border: 1px solid #bcc8cc;
+    border-radius: 18px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projekt-preview img {
+    width: 100%;
+    max-width: 380px;
+
+    height: auto;
+
+    display: block;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   PROJEKT SEKTIONER
+========================= */
+
+.projekt-sektion {
+    padding: 65px 0;
+
+    border-top: 1px solid #b8c5c9;
+}
+
+.projekt-sektion-tekst {
+    max-width: 700px;
+
+    margin-bottom: 35px;
+}
+
+.projekt-sektion h4,
+.projekt-refleksion h4 {
+    font-size: 32px;
+
+    margin-bottom: 15px;
+}
+
+.projekt-sektion p,
+.projekt-refleksion p {
+    line-height: 1.7;
+
+    color: #444;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PROCES BILLEDER
+========================= */
+
+.proces-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.proces-grid figure {
+    background: #f4f5f5;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #c2ccd0;
+}
+
+.proces-grid img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+    object-position: top;
+
+    display: block;
+}
+
+.proces-grid figcaption {
+    padding: 18px 20px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   KODE / UDVIKLING
+========================= */
+
+.kode-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.kode-boks {
+    background: #1e1e1e;
+    color: #f5f5f5;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    overflow-x: auto;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================
+   REFLEKSION
+========================= */
+
+.projekt-refleksion {
+    border-top: 1px solid #b8c5c9;
+
+    padding-top: 65px;
+
+    max-width: 750px;
+}
+
+
+/* =========================
+   MINDRE OPGAVER
+========================= */
+
+.mindre-projekt {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 40px;
+
+    padding: 35px;
+}
+
+.mindre-projekt h3 {
+    font-size: 30px;
+}
+
+.mindre-projekt p {
+    max-width: 700px;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================
+   MOBIL / TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .skole-intro h1 {
+        font-size: 50px;
+    }
+
+    .semester-menu {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projekt {
+        padding: 30px;
+    }
+
+    .projekt-top {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .projekt-preview img {
+        max-width: 450px;
+    }
+
+    .proces-grid,
+    .kode-sektion {
+        grid-template-columns: 1fr;
+    }
+
+    .mindre-projekt {
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 600px) {
+
+    .skole-side {
+        width: 92%;
+    }
+
+    .skole-intro {
+        padding: 50px 0 40px;
+    }
+
+    .skole-intro h1 {
+        font-size: 42px;
+    }
+
+    .semester-menu {
+        grid-template-columns: 1fr;
+
+        margin-bottom: 70px;
+    }
+
+    .semester {
+        padding: 50px 0;
+    }
+
+    .semester-heading h2 {
+        font-size: 38px;
+    }
+
+    .projekt {
+        padding: 22px;
+
+        border-radius: 20px;
+    }
+
+    .projekt h3 {
+        font-size: 34px;
+    }
+
+    .projekt-sektion h4,
+    .projekt-refleksion h4 {
+        font-size: 27px;
+    }
+
+    .projekt-tools span {
+        font-size: 13px;
+
+        padding: 9px 14px;
+    }
+
+    .kode-boks {
+        font-size: 12px;
+
+        padding: 20px;
+    }
+
+}
+
+/* =========================
+   2. SEMESTER
+========================= */
+
+
+/* WEBSHOP BILLEDER */
+
+.webshop-billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.webshop-billeder figure,
+.checkout-billede {
+    background: #f4f5f5;
+
+    border: 1px solid #c2ccd0;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.webshop-billeder img,
+.checkout-billede img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+.webshop-billeder figcaption,
+.checkout-billede figcaption {
+    padding: 16px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   PERSONA PLACEHOLDER
+========================= */
+
+.persona-placeholder {
+    min-height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.placeholder-indhold {
+    padding: 35px;
+}
+
+.placeholder-indhold h4 {
+    font-size: 26px;
+
+    margin-bottom: 15px;
+}
+
+.placeholder-indhold p {
+    line-height: 1.7;
+
+    color: #444;
+}
+
+
+/* =========================
+   WEBSHOP FUNKTIONER
+========================= */
+
+.webshop-funktioner {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.checkout-billede img {
+    object-fit: contain;
+}
+
+
+/* =========================
+   MUSEUM OVARTACI
+========================= */
+
+.museum-projekt {
+    margin-top: 70px;
+}
+
+.museum-kommer {
+    margin-top: 30px;
+
+    padding: 20px 25px;
+
+    background: #edf2f3;
+
+    border-left: 3px solid #71868e;
+    border-radius: 0 12px 12px 0;
+
+    line-height: 1.6;
+
+    color: #555;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 900px) {
+
+    .webshop-billeder,
+    .webshop-funktioner {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   MUSEUM OVARTACI
+========================= */
+
+.museum-persona {
+    background: #f4f5f5;
+
+    border: 1px solid #c2ccd0;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.museum-persona img {
+    width: 100%;
+    display: block;
+}
+
+
+/* FLOW MELLEM MOBIL OG SKÆRM */
+
+.museum-flow {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+.museum-flow-billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.museum-flow-billeder figure {
+    background: #f4f5f5;
+
+    border: 1px solid #c2ccd0;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+.museum-flow-billeder img {
+    width: 100%;
+    display: block;
+}
+
+.museum-flow-billeder figcaption {
+    padding: 15px 18px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 900px) {
+
+    .museum-flow {
+        grid-template-columns: 1fr;
+    }
+
+    .museum-flow-billeder {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.scroll-animation {
+    opacity: 0;
+
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.scroll-animation.scroll-vis {
+    opacity: 1;
+
+    transform: translateY(0);
+}
