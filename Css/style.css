@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 
-body {
+/* =========================
+   FORSIDE BAGGRUND
+========================= */
+
+.forside-body {
+    min-height: 100vh;
+
     background: linear-gradient(
         to bottom,
-        #F3F7F8 0%,
-        #E8F0F3 25%,
-        #D8E6EB 50%,
-        #C6DAE2 75%,
-        #B4CED8 100%
+        #f3f7f8 0%,
+        #e2eef2 55%,
+        #bfd5de 100%
     );
 
-    font-family: Arial, Helvetica, sans-serif;
     color: #1e1e1e;
 }
 
@@ -1224,4 +1227,153 @@ html {
     opacity: 1;
 
     transform: translateY(0);
+}
+
+/* =========================
+   KOMMENDE SEMESTRE
+========================= */
+
+.kommende-semestre {
+    padding: 100px 0 140px;
+}
+
+.kommende-semestre h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.kommende-intro {
+    max-width: 600px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: #444;
+
+    margin-bottom: 45px;
+}
+
+
+.kommende-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.kommende-kort {
+    min-height: 220px;
+
+    background: rgba(255, 255, 255, 0.55);
+
+    border: 1px solid #b9c7cc;
+    border-radius: 22px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.kommende-kort:hover {
+    transform: translateY(-5px);
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.kommende-nummer {
+    font-size: 13px;
+    letter-spacing: 3px;
+
+    color: #6c7b80;
+}
+
+
+.kommende-kort h3 {
+    font-size: 30px;
+
+    margin-bottom: 5px;
+}
+
+
+.kommende-kort p {
+    color: #666;
+
+    font-style: italic;
+}
+
+
+.kommende-status {
+    width: fit-content;
+
+    padding: 8px 13px;
+
+    border: 1px solid #9eafb5;
+    border-radius: 100px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 700px) {
+
+    .kommende-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kommende-semestre h2 {
+        font-size: 38px;
+    }
+
+}
+
+/* =========================
+   TIL TOPPEN
+========================= */
+
+.til-toppen {
+    display: flex;
+    justify-content: center;
+
+    padding: 0 0 80px;
+}
+
+.til-toppen a {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: #f4f5f5;
+
+    border: 1px solid #9eafb5;
+    border-radius: 100px;
+
+    color: #1e1e1e;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.til-toppen a:hover {
+    transform: translateY(-4px);
+
+    background: #ffffff;
 }
