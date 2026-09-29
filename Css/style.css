@@ -173,6 +173,59 @@ header p {
     background-color: white;
 }
 
+/* =========================
+   FORSIDE - SPILCAFÉ
+========================= */
+
+.spilcafe-kort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #505c38;
+    color: #fff6f1;
+
+    text-align: center;
+}
+
+.spilcafe-indhold {
+    padding: 40px;
+}
+
+.spilcafe-indhold span {
+    display: block;
+
+    margin-bottom: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.spilcafe-indhold h2 {
+    margin-bottom: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.spilcafe-indhold p {
+    display: inline-block;
+
+    margin-top: 15px;
+    padding: 12px 20px;
+
+    background-color: #bf171c;
+    color: #fff6f1;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
 
 /* =========================
    FORSIDE - MOBIL
